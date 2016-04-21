@@ -37,4 +37,4 @@ trap "rm -f ${tmpfile}* ${testfile}" EXIT
 /opt/ruby-1.9.3-p547/bin/passenger-status > ${tmpfile}
 max_pool_size=`grep Max ${tmpfile} | awk '{ print $5 }'``
 
-datadog_send "rodeofx.shotgun.number_process" "${hostname}" "${currenttime}" "${max_pool_size}"
+datadog_send "shotgun.number_process" "${hostname}" "${currenttime}" "${max_pool_size}"
