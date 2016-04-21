@@ -55,7 +55,7 @@ curl  -X POST -H "Content-type: application/json" \
 
 curl  -X POST -H "Content-type: application/json" \
 -d "{ \"series\" :
-    [{\"metric\":\"rodeofx.shotgun.request_queue\",
+    [{\"metric\":\"shotgun.request_queue\",
         \"points\":[[$currenttime, ${request_queue}]],
         \"type\":\"gauge\",
         \"host\":\"${hostname}\",
